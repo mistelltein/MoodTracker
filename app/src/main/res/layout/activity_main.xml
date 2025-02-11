@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/light_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mood_question"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/inputMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mood_hint"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:autofillHints="username"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"/>
+
+        <Button
+            android:id="@+id/generateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generate_button"
+            android:padding="14dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/outputMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
