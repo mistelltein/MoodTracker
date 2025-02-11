@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         int mood = Integer.parseInt(inputText);
-
         String message;
+
         if (mood >= 80) {
             message = "Ты супер! Продолжай в том же духе! 🔥";
         } else if (mood >= 50) {
@@ -47,9 +47,11 @@ public class MainActivity extends AppCompatActivity {
         } else if (mood >= 20) {
             message = "Не унывай, завтра будет лучше! 💪";
         } else {
-            message = "Ты не один! Все наладится, просто верь в себя. ❤️";
+            message = "Ты не один! Всё наладится, просто верь в себя. ❤️";
         }
 
+        outputMessage.setAlpha(0f);
         outputMessage.setText(message);
+        outputMessage.animate().alpha(1f).setDuration(500).start();
     }
 }

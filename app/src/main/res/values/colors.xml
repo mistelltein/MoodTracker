@@ -5,4 +5,9 @@
     <color name="purple_500">#6200EE</color>
     <color name="light_blue">#E3F2FD</color>
     <color name="teal_700">#00796B</color>
+
+    <color name="primary">#7B1FA2</color>
+    <color name="secondary">#E1BEE7</color>
+    <color name="background_start">#7E57C2</color>
+    <color name="background_end">#512DA8</color>
 </resources>
